@@ -1,0 +1,153 @@
+{
+  "settings": {
+    "name": "Multi-chain",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "mobirise5",
+      "title": "Mobirise 5",
+      "styling": {
+        "primaryColor": "#6592e6",
+        "secondaryColor": "#ff6666",
+        "successColor": "#40b0bf",
+        "infoColor": "#47b5ed",
+        "warningColor": "#FFE161",
+        "dangerColor": "#ff9966",
+        "mainFont": "Jost",
+        "display1Font": "Jost",
+        "display1Size": 4.6,
+        "display2Font": "Jost",
+        "display2Size": 3,
+        "display5Font": "Jost",
+        "display5Size": 2,
+        "display7Font": "Jost",
+        "display7Size": 1.2,
+        "display4Font": "Jost",
+        "display4Size": 1.1,
+        "isRoundedButtons": false,
+        "isGhostButtonBorder": false,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.6.11",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/multichain_1.png",
+    "mbrsiteDomain": "jlhkslaqjt",
+    "imageResize": false,
+    "robotsSwitcher": false,
+    "sitemapSwitcher": false,
+    "sitemapSwitcherAuto": false,
+    "siteUrl": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 3,
+    "versionPublish": "5.6.11"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Multichain - Cross-Chain Router Protocol.",
+        "meta_descr": "Multichain is a cross-chain router protocol; an infrustructure for multi-chain ecosystem, envisioned to become the ultimate router for Web 3.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            "@media (max-width: 991px)": {
+              ".image-wrapper": {
+                "margin-bottom": "1rem"
+              }
+            },
+            ".row": {
+              "flex-direction": "row-reverse"
+            },
+            "img": {
+              "width": "100%"
+            }
+          },
+          "_name": "image3",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image3\" group=\"Images & Videos\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"range\" name=\"textWidth\" title=\"Image\" min=\"4\" max=\"12\" step=\"1\" value=\"12\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12 col-lg-{{textWidth}}\">\n                <div class=\"image-wrapper\">\n                    <img src=\"@PROJECT_PATH@/assets/images/multichain.png\" alt=\"Multichain\">\n                    <p class=\"mbr-description mbr-fonts-style mt-2 align-center\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-description\">\n                        Image Description</p>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "image3-1",
+          "_isUserblock": true,
+          "_cid": "tk2nI1mZdX",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            }
+          },
+          "_name": "header2",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header2\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n\n        <input type=\"range\" inline name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"12\" step=\"1\">\n        <select title=\"Align\" name=\"contentAlign\">\n            <option value selected>Left</option>\n            <option value=\"justify-content-center\">Center</option>\n            <option value=\"justify-content-end\">Right</option>\n        </select>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubitle\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background7.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row {{contentAlign}}\">\n            <div class=\"col-12 col-lg-{{textWidth}}\">\n                <h1 class=\"mbr-section-title mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\"><b>Multichain - Cross-Chain Router Protocol</b></h1>\n                <h2 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-2\" mbr-if=\"showSubitle\">Header Subtitle</h2>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Enterprise NFTs in MultiChain 2.2\n<br>The easiest path to non-fungible tokens in permissioned chains\n<br>\n<br>Earlier this week, we released MultiChain 2.2 with integrated support for non-fungible tokens (NFTs). Over the past year, we’ve been talking to lots of customers about how they’d like to see NFTs supported on our platform. And with the release of MultiChain 2.2, we’re delivering exactly what they need.\n<br>\n<br>What’s an NFT?\n<br>But first some background. If you’ve been watching the blockchain world for long enough, you’ll recognize the pattern. Every year or two, there’s a big new idea about how blockchains will transform some part of the economy. The media and money pile on and the price of everything skyrockets.\n<br>\n<br>In 2013, it was all about bitcoin as a currency. In 2015, Ethereum and decentralized autonomous organizations (DAOs). In 2016, private blockchains for banks. In 2018, an explosion of new public blockchains. In 2020, decentralized finance (DeFi). Now, in 2021, it’s the turn of non-fungible tokens (NFTs).\n<br>\n<br>So what is an NFT? It’s a single unit of value, issued onto a blockchain, which can be transferred, sold and exchanged by that blockchain’s users. Unlike cryptocurrencies or regular on-chain assets, only one unit of each NFT is available, so it can only be owned by one person or organization. By contrast, dollars and bitcoins are “fungible”, meaning that many units of these assets are in circulation, and each unit is perfectly interchangeable with any other.\n<br>\n<br>\n<br>But why would anyone pay for an NFT? Because it’s associated, through a piece of data on the blockchain, with an item of value. In theory, an NFT could represent the ownership of a house or car, so whoever owns the NFT on the blockchain has legal ownership of the related physical asset. In reality, most NFTs issued and bought today represent a piece of digital art, or some other type of digital collectible.\n<br>\n<br>Digital but Unique\n<br>But surely digital things can be infinitely reproduced because, well, they’re digital? What is the value of owning the NFT for a big JPEG or viral video if anyone can easily duplicate the content? This question, while valid, could equally be asked about physical art. Right now, you can buy a full-sized “museum quality” replica of the Mona Lisa for a few hundred dollars online. And yet, the original is worth closer to a billion.\n<br>\n<br>Whether it makes rational sense or not, we humans see psychological and cultural value in owning the original of something. The first copy that ever existed. The version produced by the artist herself. The same one that everyone else wants. In this respect, digital art, represented by a NFT, is not all that different from a classical painting. Sure, anyone can fake it. But everyone knows where the real one is.\n<br>\n<br>Bragging rights aside, there can also be concrete benefits to owning an NFT. Holding the token can grant you the right to display the digital art in public or on a website. It can allow you to lend out a digital collectible or create derivative works. And all of this is enforced by old-school copyright law, with the artist maintaining the right to sue someone using their work illegally.\n<br>\n<br>At the moment, the big NFT news is all on public blockchains. For the most part, that means Ethereum, with some activity on newer chains such as Solana, FLOW and Origin.\n<br>\n<br>But what about organizations that can’t work with a free-for-all public blockchain? What about NFT applications that need predictable transaction cost and speed, in a blockchain with some degree of governance and control? Or what if the NFTs represent physical goods in a supply chain, rather than abstract financial assets?\n<br>\n<br>NFTs in MultiChain 2.2\n<br>This is where MultiChain comes in. MultiChain has supported issuing, transacting and exchanging assets over a blockchain all the way back to version 1.0 in 2015. In a world just starting to move past bitcoin, this was the first blockchain feature we implemented. Any number of named assets can be created on a MultiChain blockchain, and there are easy API commands for checking asset balances, sending assets in transactions, and creating safe atomic swaps between multiple assets and parties.\n<br>\n<br>In MultiChain 2.2, NFTs are implemented as a simple extension to this approach. When a new asset is created, it can optionally be declared as non-fungible. For non-fungible assets, each issuance of units creates a new token with a unique name. Each token is separately identified and tracked across transactions, and can be exchanged with other tokens or assets in atomic operations. Each asset offers full control over who can issue tokens, as well as optional restrictions on who can send and receive them. And there are several ways to permanently associate data with a new token being issued – a JSON object, up to 64 MB of on-chain data, or up to 1 GB of off-chain data.\n<br>\n<br>Version 2.2 adds several other features to MultiChain assets, useful for both fungible or non-fungible assets. Depending on the options passed during creation, assets can now be closed and/or reopened for issuance, giving the asset administrator(s) more control. A limit can be set for the number of new units per issuance (for NFTs this should generally be 1). And a separate limit is available for the total amount issued over an asset’s lifetime. All of this could previously be implemented using smart filters, but now they’re available out-of-the-box with no programming required.\n<br>\n<br>What else is new in MultiChain 2.2?\n<br>Aside from NFT support, MultiChain 2.2 introduces two other major enhancements. First, it supports MultiChain Explorer 2, a completely rewritten web-based blockchain browser. Explorer 2 is far faster and more scalable than the previous version, because it leverages MultiChain to track the blockchain’s state instead of its own local database. It supports multiple blockchains simultaneously and no longer needs to run on the same computer as a node. Explorer 2 is open source under the BSD license and available now on Github.\n<br>\n<br>Second, read operations for MultiChain streams are now multi-threaded. Many of our users rely on streams for large-scale data applications, publishing thousands of pieces of data per second at peak times. While MultiChain can handle this load comfortably, nodes can take around a second to process the resulting large blocks. In previous versions of MultiChain, API commands to query streams would have to wait while the node was processing a block. Now, in MultiChain 2.2, all stream read operations are processed in parallel and receive immediate responses.\n<br>\n<br>How to get started\n<br>To get started with NFTs on MultiChain, simply download MultiChain 2.2 and follow sections 1, 2, 3 and 7 of the Getting Started guide. For more information, check out the updated API documentation for details of how to issue non-fungible assets and their associated tokens with the issue and issuetoken commands.\n<br>\n<br>MultiChain continues to be available in two editions – Community (open source) and Enterprise (commercial). The Enterprise edition adds a number of features relating to confidentiality, scalability and compliance, such as read-restricted streams, end-to-end encryption, external database integration and purging of off-chain data. A time-limited demo version of MultiChain Enterprise is available for download.\n<br>\n<br>Finally, we’re interested in discussing ideas for setting up a low-cost, high-volume network for transacting NFTs, built on MultiChain. One idea raised is to create a blockchain which is open to the public but uses permission-based mining to avoid the energy demands of proof-of-work. If this sounds of interest, please get in touch.\n<br>\n<br></p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn mt-3\" mbr-if=\"showButtons\">\n                    <a class=\"btn btn-success\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Free Download!</a>\n                    <a class=\"btn btn-success-outline\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Live Demos &gt;</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "header2-2",
+          "_isUserblock": true,
+          "_cid": "tk2nICvh6Y",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
